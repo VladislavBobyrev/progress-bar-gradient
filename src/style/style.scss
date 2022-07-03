@@ -1,0 +1,35 @@
+html {
+  display: flex;
+  min-height: -webkit-fill-available;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #121212;
+}
+
+.progress {
+  width: 80%;
+  height: 3rem;
+  background: #363636;
+  border-radius: 15px;
+}
+
+.progress__item {
+  width: 0%;
+  height: 100%;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #7ee8fa, #ff8494);
+  animation: animate 3s linear alternate infinite;
+}
+
+@keyframes animate {
+  100% {
+    width: 100%;    
+  }
+}
